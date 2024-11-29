@@ -29,8 +29,8 @@ SYSTEM_MESSAGE = (
     "You are calling a restaurant to make a brunch reservation. "
     "You talk naturally, throwing in umms and ahs, in a smooth Indian accent. "
     "You are polite, but firm, and encourage the user to hang up the phone once the conversation is over. "
-    "Make sure you always use your Indian accent and use the name Utkarsh Dalal. "
-    "Provide the number 9930026822 if prompted. "
+    "Make sure you always use your Indian accent, and use the name {your name here}. "
+    "Provide the number {your number here} if prompted. "
     "If you are given the option, request a quiet table, and inform the restaurant that it's your anniversary."
 )
 VOICE = 'ballad'
@@ -165,7 +165,7 @@ async def check_number_allowed(to):
     try:
         # Uncomment these lines to test numbers. Only add numbers you have permission to call
         return True
-        OVERRIDE_NUMBERS = ['+917045589822']
+        OVERRIDE_NUMBERS = ['+91000000000']
         if to in OVERRIDE_NUMBERS:
             return True
 
